@@ -1,5 +1,5 @@
-# React-app-redux-seed
-React seed for any new projects
+# React & Redux Seed Project
+React with redux artitecture seed for any new projects
 
 ## Quick Overview
 
