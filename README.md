@@ -5,6 +5,7 @@ React seed for any new projects
 
 ```sh
 cd react-app-redux-seed
+npm install
 npm start
 ```
 
