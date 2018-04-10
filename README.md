@@ -82,6 +82,23 @@ https://www.jetbrains.com/webstorm/
 We highly recommend using WebStorm to be the IDE of coding instead of using Notepad++.
 In registering with education version, it’s free.
 
+### Redux
+https://github.com/reactjs/redux
+
+This plugin helps to create or update the state in react. Controls the user action in react.
+If we want to create a user action, follow the rules of redux.
+
+#### Tutorial
+http://redux.js.org/
+#### Reference Example
+https://github.com/reactjs/redux/tree/master/examples/real-world
+<p align='center'>
+<img src='https://upload.cc/i1/2018/04/10/r3b62v.png' width='600'>
+</p>
+<p align='center'>
+<img src='https://upload.cc/i1/2018/04/10/n8xu4A.png' width='600'>
+</p>
+
 ### System Structure
 <p align='center'>
 <img src='https://upload.cc/i1/2018/04/10/HAOvfe.png' width='400'>
