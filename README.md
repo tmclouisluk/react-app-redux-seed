@@ -1,2 +1,78 @@
-# react-app-redux-seed
-react seed for any new projects
+# React-app-redux-seed
+React seed for any new projects
+
+## Quick Overview
+
+```sh
+cd react-app-redux-seed
+npm start
+```
+
+## Structure Introduction
+### Used Package
+#### Axios
+As React does not include any Ajax method, Axios helps us doing GET, POST, etc request between API and React.
+https://github.com/axios/axios
+#### Material-UI-next
+We are based on Material-UI to build up the UI of the web. 
+Material-UI provides the support about layout and components.
+1.	If we want to divide a div into a numbers of pieces with responsive UI, read the Layout page.
+https://material-ui-next.com/layout/basics/
+
+2.	If we want to add some components, say, textbox or nav bar, read the Component Demos and Component API page
+https://material-ui-next.com/demos/app-bar/
+#### React-router
+React-router provides a service of link to other pages, like <a></a> but without any postback.
+The basic usage guide is here
+https://github.com/kdchang/reactjs101/blob/master/Ch05/react-router-introduction.md
+
+### React Reference
+#### 從零開始學 ReactJS（ReactJS 101）
+https://www.gitbook.com/book/kdchang/react101/details
+This is a react tutorial for beginners in chinese.  
+Recommended to read chapter 3-6 for the basic usage.
+For the advance usage, recommended to read chapter 7-10
+ 
+### Coding Ide
+#### WebStorm
+https://www.jetbrains.com/webstorm/
+We highly recommend using WebStorm to be the IDE of coding instead of using Notepad++.
+In registering with education version, it’s free.
+
+### System Structure
+<p align='center'>
+<img src='https://upload.cc/i1/2018/04/10/HAOvfe.png' width='400'>
+</p>
+
+#### Actions
+This is the user action which sends data from the application to store. We have to describe the actions in this folder.
+Naming: ActionXXXX, eg. ActionSegment/ActionImage
+ 
+#### Constants
+##### /models
+This describes the data structures of states in the application.
+##### actionTypes.js
+This js file describes the name of actions. 
+
+#### Reducers
+This describes the user action’s actions, the application’s state changes in response.
+Naming: XXXX, eg. Segment/Image
+
+#### Middleware
+The previous version of modules/control
+
+#### Containers
+Concepts: 
+https://github.com/kdchang/reactjs101/blob/master/Ch08/container-presentational-component-.md
+
+### Routing
+
+If creates one more page, it should be created inside the pages folder.
+The first letter should be capital letter
+
+In index.js, we can setup the website routing.
+ 
+This is the master page of the website.
+If there is a new page, it will be added here, inside the <AppContent>
+The syntax is same as <Route> component.
+
