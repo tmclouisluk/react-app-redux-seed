@@ -8,6 +8,49 @@ cd react-app-redux-seed
 npm start
 ```
 
+
+## UI
+### Material-UI
+https://material-ui-next.com/
+```sh
+npm install material-ui@next --save
+```
+#### 1. Add
+```sh
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
+inside public/index.html <head></head>
+
+#### 2. Edit the follow codes into src/index.js
+```sh
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+...
+const theme = createMuiTheme({
+});
+...
+ReactDOM.render(
+    <Provider store={store}>
+        <MuiThemeProvider theme={theme}>
+            <Router>
+               ...
+            </Router>
+        </MuiThemeProvider>
+    </Provider>,
+    document.getElementById('root'));
+```
+
+### Reactstrap
+https://reactstrap.github.io/
+```sh
+npm install bootstrap --save
+npm install reactstrap@next --save
+```
+#### 1. Import Bootstrap CSS in the src/index.js
+```sh
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+
 ## Structure Introduction
 ### Used Package
 #### Axios
