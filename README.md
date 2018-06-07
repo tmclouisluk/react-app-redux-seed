@@ -12,19 +12,20 @@ npm start
 
 ## UI
 ### Material-UI
-https://material-ui-next.com/
+https://material-ui.com/
 ```sh
-npm install material-ui@next --save
+npm install @material-ui/core --save
 ```
 #### 1. Add
 ```sh
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 ```
 inside public/index.html <head></head>
 
 #### 2. Edit the follow codes into src/index.js
 ```sh
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 ...
 const theme = createMuiTheme({
 });
@@ -128,7 +129,7 @@ https://github.com/kdchang/reactjs101/blob/master/Ch08/container-presentational-
 
 ### Routing
 
-If creates one more page, it should be created inside the pages folder.
+If creates one more page, it should be created inside the Containers folder.
 The first letter should be capital letter
 
 In index.js, we can setup the website routing.
