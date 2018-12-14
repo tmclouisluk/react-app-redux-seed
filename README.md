@@ -12,7 +12,7 @@ npm start
 ## Depolyment
 
 ```sh
-cd biism-photo-app
+cd react-app-redux-seed
 ```
 
 ```sh
