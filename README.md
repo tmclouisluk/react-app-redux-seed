@@ -9,6 +9,41 @@ npm install
 npm start
 ```
 
+## Depolyment
+
+```sh
+cd biism-photo-app
+```
+
+```sh
+npm run build
+```
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.
+
+```sh
+node run.js
+```
+Hosting the web app using Node and Express
+
+### Config in run.js
+```javascript
+const express = require('express');
+...
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(3000);
+```
+
+The ```build``` folder with static assets is the only output produced by ```npm run build```
+
+The number in ```app.listen()``` is the hosting port
+
 
 ## UI
 ### Material-UI
