@@ -50,17 +50,20 @@ The number in ```app.listen()``` is the hosting port
 https://material-ui.com/
 ```sh
 npm install @material-ui/core --save
+npm install @material-ui/icons --save
 ```
 #### 1. Add
 ```sh
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 inside public/index.html <head></head>
 
 #### 2. Edit the follow codes into src/index.js
 ```sh
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 ...
 const theme = createMuiTheme({
 });
