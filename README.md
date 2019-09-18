@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-## Depolyment
+## Deployment
 
 ```sh
 cd react-app-redux-seed
