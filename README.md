@@ -70,11 +70,11 @@ const theme = createMuiTheme({
 ...
 ReactDOM.render(
     <Provider store={store}>
-        <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
             <Router>
                ...
             </Router>
-        </MuiThemeProvider>
+        </ThemeProvider>
     </Provider>,
     document.getElementById('root'));
 ```
